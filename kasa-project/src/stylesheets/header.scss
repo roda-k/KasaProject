@@ -1,0 +1,23 @@
+@use './app.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 3rem;
+  a {
+    color: app.$colorTheme;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  width: 28%;
+}
+
