@@ -1,0 +1,52 @@
+
+.prev-arrow {
+  background: url(../assets/Vector_left.png) no-repeat;
+  width: 46px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.next-arrow {
+  background: url(../assets/Vector_right.png) no-repeat;
+  width: 46px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  margin-bottom: 30px;
+}
+
+.image {
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  border-radius: 10px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 0.3s;
+}

@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className='footer'>
-      <img src={footerLogo} alt='Logo Kasa' />
+      <img src={footerLogo} alt='Kasa Logo' />
       <p>© 2020 Kasa. All rights reserved</p>
     </div>
   )
