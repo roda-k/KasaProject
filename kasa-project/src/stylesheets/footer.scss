@@ -1,9 +1,13 @@
 
 .footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   background-color: black;
   height: 210px;
   p {

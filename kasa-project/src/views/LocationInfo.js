@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Slider from '../components/Slider';
 import { useParams } from 'react-router-dom';
+import Collapse from '../components/Collapse';
 
 function LocationInfo({ mockData }) {
 
@@ -17,7 +18,10 @@ function LocationInfo({ mockData }) {
 
   if (idVerifiedLocation) {
     return (
-      <Slider myImages={idVerifiedLocation.pictures} />
+      <div>
+        <Slider myImages={idVerifiedLocation.pictures} />
+        <Collapse title={"pwetpwet"} content={"je suis déplié"} />
+      </div>
     )
   }
   else
