@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import collapseIcon from "../assets/vector_collapse.png"
 import '../stylesheets/collapse.scss'
 
 function Collapse({ title, content }) {
 
   function handleCollapse() {
-    const elem = document.getElementById('test')
-    const iconElem = document.getElementById('icon')
+    const elem = document.getElementById(`${title}+id`)
+    const iconElem = document.getElementById(`${title}+icon`)
     if (elem.classList.contains('is-active')) {
       elem.classList.toggle('is-active')
       iconElem.classList.toggle('opened')
@@ -17,16 +17,16 @@ function Collapse({ title, content }) {
   }
 
   return (
-    <div style={{ height: '100%' }}>
+    <div>
       <div className='collapse'>
         <div className='collapse-title'
           onClick={() => handleCollapse()}
         >
           <p className='collapse-text-title'>{title}</p>
-          <img src={collapseIcon} className='collapse-icon' id='icon'/>
+          <img src={collapseIcon} className='collapse-icon' id={`${title}+icon`}/>
         </div>
       </div>
-      <div className='collapse-body' id='test'>
+      <div className='collapse-body' id={`${title}+id`}>
         <div style={{ padding: '20px' }}>
           {typeof content === "string" &&
             <p>{content}</p>

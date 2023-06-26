@@ -5,10 +5,10 @@ function Host({ hostInfos }) {
 
   let hostName = hostInfos.name
 
-  hostName.split(" ").join("\n")
+  hostName = hostName.split(" ")
   return (
     <div className='host'>
-      <p>{hostName}</p>
+      <p>{hostName[0]}<br/>{hostName[1]}</p>
         <img src={hostInfos.picture} alt='host picture' className='profile-bubble' />
     </div>
   )

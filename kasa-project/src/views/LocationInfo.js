@@ -27,8 +27,8 @@ function LocationInfo({ mockData }) {
         <div className='infos-container'>
           <div className='title-tag'>
             <div className='title-container'>
-              <h4>{idVerifiedLocation.title}</h4>
-              <h6>{idVerifiedLocation.location}</h6>
+              <p className='big-title'>{idVerifiedLocation.title}</p>
+              <p className='subtitle'>{idVerifiedLocation.location}</p>
             </div>
             <Tags tagsInfos={idVerifiedLocation.tags} />
           </div>

@@ -1,5 +1,5 @@
 .collapse {
-  width: 100%;
+  width: calc(100% - 20px);
   height: 20px;
   border-radius: 10px;
   background-color: #FF6060;
@@ -25,7 +25,7 @@
 .collapse-body.is-active {
   transition: height 500ms ease-in-out, visibility 500ms 300ms ease-in-out, opacity 500ms 300ms ease-in-out;
   visibility: visible;
-  height: 250px;
+  height: 160px;
   opacity: 1;
 }
 

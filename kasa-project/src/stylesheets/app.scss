@@ -1,8 +1,7 @@
 $colorTheme: #FF6060;
 
 body {
-  margin: 0 auto;
-  max-width: 1240px;
+  position: relative;
   font-family: Montserrat, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,5 +11,7 @@ body {
 }
 
 .App {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-bottom: 210px;
 }

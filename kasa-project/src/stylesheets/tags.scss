@@ -1,9 +1,10 @@
 .tags {
   text-align: center;
-  height: 25px;
+  min-width: 150px;
+  margin-bottom: 10px;
   border-radius: 10px;
   margin-right: 10px;
-  padding: 0 10px 0 10px;
+  padding: 5px 10px 5px 10px;
   background-color: #FF6060;
   color: white;
 }
@@ -11,6 +12,7 @@
 .tags-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 

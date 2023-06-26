@@ -1,5 +1,14 @@
-p {
-  margin: 0;
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  p {
+    margin: 0;
+    padding-right: 10px;
+    text-align: right;
+  }
 }
 
 .profile-bubble {

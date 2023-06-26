@@ -10,8 +10,18 @@
   margin-bottom: 50px;
 }
 
-.offer-boxes {
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.offer-boxes {
+  position: relative;
   background-color: #FF6060;
   border-radius: 10px;
   width: 300px;
@@ -32,7 +42,11 @@
 }
 
 .image-text {
-  position: relative;
+  position: absolute;
+  color: white;
+  width: 70%;
+  bottom: 20px;
+  left: 10px;
   margin: 0;
 }
 

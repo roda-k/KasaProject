@@ -1,0 +1,28 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.number-style {
+  text-align: center;
+  font-size: 263px;
+  font-weight: 900;
+  margin-bottom: 87px;
+}
+
+.message-style {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+.homelink {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 86px;
+}
+
+.homelink:hover {
+  cursor: pointer;
+}
