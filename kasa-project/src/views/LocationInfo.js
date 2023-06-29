@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Slider from '../components/Slider';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Collapse from '../components/Collapse';
 import '../stylesheets/locationInfo.scss'
 import Tags from '../components/Tags';
@@ -10,14 +10,14 @@ import Ratings from '../components/Ratings';
 function LocationInfo({ mockData }) {
 
   let { id } = useParams()
-  const [idVerifiedLocation, setIdVerifiedLocation] = useState(null)
+  const navigate = useNavigate();
+  const [idVerifiedLocation, setIdVerifiedLocation] = useState(mockData.find(draft => draft.id === id))
 
   useEffect(() => {
     setIdVerifiedLocation(mockData.find(draft => draft.id === id))
-    if (idVerifiedLocation)
-      console.log("id => ", idVerifiedLocation)
-    else
-      console.log("press f")
+    if (!idVerifiedLocation) {
+      navigate(`/notfound`)
+    }
   }, [id])
 
   if (idVerifiedLocation) {
@@ -33,8 +33,8 @@ function LocationInfo({ mockData }) {
             <Tags tagsInfos={idVerifiedLocation.tags} />
           </div>
           <div className='host-rating'>
-            <Host hostInfos={idVerifiedLocation.host}/>
-            <Ratings rated={idVerifiedLocation.rating}/>
+            <Host hostInfos={idVerifiedLocation.host} />
+            <Ratings rated={idVerifiedLocation.rating} />
           </div>
         </div>
         <div className='collapses-container'>
@@ -42,7 +42,7 @@ function LocationInfo({ mockData }) {
             <Collapse title={"Description"} content={idVerifiedLocation.description} />
           </div>
           <div className='collapse-wrapper'>
-            <Collapse title={"Équipements"} content={idVerifiedLocation.equipements} />
+            <Collapse title={"Équipements"} content={idVerifiedLocation.equipments} />
           </div>
         </div>
       </div>

@@ -31,6 +31,16 @@ function Collapse({ title, content }) {
           {typeof content === "string" &&
             <p>{content}</p>
           }
+           {Array.isArray(content) &&
+            <ul>
+              {content.map((equipments) => {
+                return(
+                <li key={`${equipments}+eqlist`}>
+                  {equipments}
+                </li>
+              )})}
+            </ul>
+          }
         </div>
       </div>
     </div>
