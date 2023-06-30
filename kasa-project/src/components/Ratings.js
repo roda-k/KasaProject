@@ -7,7 +7,7 @@ function Ratings({ rated }) {
 
   const starsNumber = parseInt(rated)
   let stars = []
-  console.log("rate => ", starsNumber)
+  
   for (let i = 0; i < 5; i++) {
     stars.push(
       i < starsNumber ?

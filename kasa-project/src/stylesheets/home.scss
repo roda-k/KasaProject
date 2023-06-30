@@ -2,9 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1240px;
   background: #F7F7F7;
   border-radius: 25px;
   margin-bottom: 50px;
@@ -24,7 +25,7 @@
   position: relative;
   background-color: #FF6060;
   border-radius: 10px;
-  width: 300px;
+  width: 100%;
   height: 300px;
   margin-block-start: 0;
     margin-block-end: 0;
@@ -50,11 +51,21 @@
   margin: 0;
 }
 
+.clickable-div {
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .clickable-div:hover {
   cursor: pointer;
 }
 
 @media (max-width: 992px) and (min-width: 340px) {
+  .clickable-div {
+    padding: 0;
+    width: 100%;
+  }
   .offers-container {
     padding: 0;
     width: 100%;

@@ -3,8 +3,6 @@ import '../stylesheets/tags.scss'
 
 function Tags({ tagsInfos }) {
 
-  console.log("tagsinfos => ", tagsInfos)
-
   return (
     <div className='tags-container'>
       {tagsInfos.map((item, index) => {
@@ -16,7 +14,6 @@ function Tags({ tagsInfos }) {
       })}
     </div>
   )
-
 }
 
 export default Tags
