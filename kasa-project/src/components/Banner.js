@@ -5,7 +5,7 @@ function Banner({ format, homeBanner, msg = null }) {
 
   return (
     <div className='banner-container'>
-      <div className={format === 'large' ? 'banner-large' : 'banner-small'}>
+      <div className={format === 'home' ? 'banner-home' : 'banner-about'}>
         <img src={homeBanner} className="banner-img" alt="Home banner" />
         {msg ?
           <p className='banner-msg'>{msg}</p>

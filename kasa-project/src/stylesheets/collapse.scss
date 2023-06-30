@@ -52,3 +52,9 @@ li {
 .collapse-text-title {
   margin: 0;
 }
+
+@media (max-width: 992px) and (min-width: 320px) {
+  .collapse-body {
+    margin-bottom: 20px;
+  }
+}

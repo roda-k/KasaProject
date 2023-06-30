@@ -12,7 +12,7 @@ function Home({ mockData }) {
   return (
     <div>
       <Banner
-        format='large'
+        format='home'
         homeBanner={homeBanner}
         msg="Chez vous, partout et ailleurs"
       />

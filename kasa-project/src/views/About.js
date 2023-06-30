@@ -9,7 +9,6 @@ function About() {
   return (
     <div>
       <Banner
-        format='large'
         homeBanner={aboutBanner}
       />
       <div className='collapse-wrapper-about'>

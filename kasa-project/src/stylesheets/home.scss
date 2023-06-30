@@ -53,3 +53,14 @@
 .clickable-div:hover {
   cursor: pointer;
 }
+
+@media (max-width: 992px) and (min-width: 340px) {
+  .offers-container {
+    padding: 0;
+    width: 100%;
+    background: white;
+  }
+  .offer-boxes {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.ratings {
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) and (min-width: 320px) {
+  .star-sizing {
+    width: 18px;
+  }
+  .ratings {
+    margin-top: 0;
+  }
+}

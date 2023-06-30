@@ -6,9 +6,9 @@ function Header() {
 
   return(
     <div className='header'>
-      <img src={Logo} alt='Logo Kasa' />
+      <img src={Logo} className='logo-kasa' alt='Logo Kasa' />
       <div className='headerLinks'>
-      <a href="/">Accueil</a>
+      <a href="/" className='home'>Accueil</a>
       <a href="/about">A propos</a>
       </div>
     </div>

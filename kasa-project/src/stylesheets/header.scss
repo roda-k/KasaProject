@@ -3,13 +3,17 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 0;
+  white-space: nowrap;
   a {
     color: app.$colorTheme;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
+  }
+  .home {
+    margin-right: 10px;
   }
 }
 
@@ -19,5 +23,16 @@
   align-items: center;
   font-size: 24px;
   width: 28%;
+  max-width: 300px;
 }
 
+@media (max-width: 992px) and (min-width: 340px) {
+  .logo-kasa {
+    max-width: 145px;
+  }
+  .headerLinks {
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 45%;
+  }
+}
