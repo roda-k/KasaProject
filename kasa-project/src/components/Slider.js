@@ -20,8 +20,9 @@ function Slider({ myImages }) {
 
   return (
     <div className='slider'>
-      <div className='prev-arrow' onClick={prevSlide} />
-      <div className='next-arrow' onClick={nextSlide} />
+      <div className={length > 1 ? 'prev-arrow' : 'element-hidden'} onClick={prevSlide} />
+      <div className={length > 1 ? 'next-arrow' : 'element-hidden'} onClick={nextSlide} />
+      <p className={length > 1 ? 'img-count' : 'img-count element-hidden'}>{`${current + 1}/${length}`}</p>
       {myImages.map((slide, index) => {
         return (
           <div
@@ -29,7 +30,7 @@ function Slider({ myImages }) {
             key={index}
           >
             {index === current && (
-              <img src={slide} alt='travel image' className='image' />
+              <img src={slide} alt='Travel preview' className='slider-style' />
             )}
           </div>
         );

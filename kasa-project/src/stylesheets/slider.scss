@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.element-hidden {
+  visibility: hidden;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -33,12 +37,19 @@
   margin-bottom: 30px;
 }
 
-.image {
+.slider-style {
   object-fit: cover;
   width: 100%;
   max-width: 1240px;
   height: 415px;
   border-radius: 10px;
+}
+
+.img-count {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  color: white;
 }
 
 .slide {
@@ -57,7 +68,7 @@
     margin-bottom: 15px;
   }
 
-  .image {
+  .slider-style {
     height: 255px;
   }
 
@@ -73,5 +84,9 @@
     width: 24px;
     height: 24px;
     right: 0;
+  }
+
+  .img-count {
+    visibility: hidden;
   }
 }

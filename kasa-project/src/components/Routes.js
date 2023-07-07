@@ -10,16 +10,19 @@ import About from '../views/About';
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home mockData={mockData} />} />
-        <Route path='location/:id' element={<LocationInfo mockData={mockData} />} />
-        <Route path='about' element={<About />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+    <>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home mockData={mockData} />} />
+          <Route path='location/:id' element={<LocationInfo mockData={mockData} />} />
+          <Route path='about' element={<About />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </>
+
   )
 }
 
