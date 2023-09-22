@@ -14,10 +14,10 @@ function App() {
       <div className='App'>
         <Header />
         <Routes>
-          <Route path='/' element={<Home mockData={mockData} />} />
-          <Route path='location/:id' element={<LocationInfo mockData={mockData} />} />
-          <Route path='about' element={<About />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path='/KasaProject' element={<Home mockData={mockData} />} />
+          <Route path='KasaProject/location/:id' element={<LocationInfo mockData={mockData} />} />
+          <Route path='KasaProject/about' element={<About />} />
+          <Route path='KasaProject/*' element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
