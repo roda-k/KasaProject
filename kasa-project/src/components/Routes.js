@@ -15,9 +15,9 @@ function App() {
         <Header />
         <Routes>
           <Route path='/KasaProject' element={<Home mockData={mockData} />} />
-          <Route path='KasaProject/location/:id' element={<LocationInfo mockData={mockData} />} />
-          <Route path='KasaProject/about' element={<About />} />
-          <Route path='KasaProject/*' element={<NotFound />} />
+          <Route path='/KasaProject/location/:id' element={<LocationInfo mockData={mockData} />} />
+          <Route path='/KasaProject/about' element={<About />} />
+          <Route path='/KasaProject/*' element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
